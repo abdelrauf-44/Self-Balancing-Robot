@@ -31,17 +31,13 @@ Power: Battery supply with onboard 5V regulation
 
 🛠️ Hardware Components
 
-ESP32 Development Board
+ESP32 super mini 
 
 MPU6050 IMU
 
-DC Geared Motors (2×)
+DC  Motors (2×)
 
-Motor Driver (L293D / L298-based)
-
-7805 Voltage Regulator
-
-Push Buttons & Status LEDs
+Motor Driver (L293D)
 
 Custom prototyping boards
 
@@ -59,16 +55,11 @@ ESP32 GPIO connections
 
 Motor driver interface
 
-User input buttons and status LEDs
+![Electrical Schematic](images/schematic.png)
 
 🧱 Mechanical Design & Assembly
 
-The robot uses a compact two-wheel inverted pendulum configuration.
-Electronics are stacked vertically to keep the center of mass high, improving balance control performance.
-
-Assembled Robot:
-
-(Optional: 3D CAD assembly can be added here if available.)
+![Robot Assembly](images/robot.jpg)
 
 🎯 Control Strategy
 Angle Estimation
