@@ -1,9 +1,10 @@
-🤖 Self-Balancing Robot (ESP32 + MPU6050)
+# 🤖 Self-Balancing Robot (ESP32 + MPU6050)
 
 A two-wheeled self-balancing robot based on ESP32 and MPU6050 IMU, implementing PID control to stabilize an inverted pendulum system in real time.
 The project focuses on practical control engineering, embedded systems, and electromechanical integration.
 
-📌 Project Overview
+
+# 📌 Project Overview
 
 This project demonstrates the design and implementation of a self-balancing robot using:
 
@@ -17,7 +18,7 @@ Embedded implementation on an ESP32 microcontroller
 
 The robot is capable of maintaining an upright position and recovering from small disturbances.
 
-🧩 System Architecture
+# 🧩 System Architecture
 
 Main subsystems:
 
@@ -27,9 +28,9 @@ Control: PID controller running on ESP32
 
 Actuation: Dual DC motors via motor driver
 
-Power: Battery supply with onboard 5V regulation
+Power: Battery supply with onboard 5V regulation for the motor driver
 
-🛠️ Hardware Components
+# 🛠️ Hardware Components
 
 ESP32 super mini 
 
@@ -39,13 +40,11 @@ DC  Motors (2×)
 
 Motor Driver (L293D)
 
-Custom prototyping boards
-
 3D-printed mechanical frame
 
 Battery pack with power switch
 
-🔌 Electrical Schematic
+# 🔌 Electrical Schematic
 
 The schematic below shows the complete electrical design including:
 
@@ -57,18 +56,20 @@ Motor driver interface
 
 ![Electrical Schematic](images/schematic.png)
 
-🧱 Mechanical Design & Assembly
+# 🧱 Mechanical Design & Assembly
 
-![Robot Assembly](images/robot.jpg)
+<p align="center">
+  <img src="images/robot_assembly.png" width="400">
+</p>
 
-🎯 Control Strategy
+# 🎯 Control Strategy
 Angle Estimation
 
 MPU6050 accelerometer and gyroscope data are combined to estimate the robot tilt angle.
 
 Gyroscope data provides short-term accuracy, while accelerometer data corrects long-term drift.
 
-PID Controller
+# PID Controller
 
 The controller minimizes the tilt angle error using:
 
@@ -80,7 +81,7 @@ Derivative (D): Improves damping and stability
 
 Controller output is converted to PWM signals driving the motors.
 
-💻 Software Architecture
+# 💻 Software Architecture
 
 Platform: Arduino framework (ESP32)
 
@@ -96,19 +97,15 @@ Update motor PWM outputs
 
 Modular structure for easy tuning and testing
 
-📡 Features
+# 📡 Features
 
 Real-time balance stabilization
 
 Adjustable PID parameters
 
-Status indication using LEDs
-
-Push-button interaction
-
 Compact embedded implementation
 
-🧪 Results & Observations
+# 🧪 Results & Observations
 
 The robot can balance successfully for short to medium durations.
 
@@ -122,7 +119,7 @@ Loop timing consistency
 
 The project highlights real-world control challenges beyond simulation.
 
-🚀 Future Improvements
+# 🚀 Future Improvements
 
 Implement complementary or Kalman filtering
 
@@ -134,7 +131,7 @@ Implement auto-tuning or adaptive control
 
 Wireless parameter tuning and monitoring
 
-▶️ How to Run
+# ▶️ How to Run
 
 Upload the firmware to the ESP32 using Arduino IDE
 
@@ -146,8 +143,8 @@ Gradually test balance recovery
 
 ⚠️ Start with low motor speed limits to avoid damage.
 
-👤 Author
+# 👤 Author
 
 Mohamed Abdelrauf
-Control & Automation Engineering
+Electrcial Engineering (UTM) 
 Self-Balancing Robot Project
